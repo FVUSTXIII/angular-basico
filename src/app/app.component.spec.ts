@@ -1,11 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { ContadorComponent } from './Contador/contador/contador.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        ContadorComponent
       ],
     }).compileComponents();
   });
@@ -19,7 +21,7 @@ describe('AppComponent', () => {
   it(`should have as title 'bases'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('bases');
+    expect(app).toEqual('bases');
   });
 
   it('should render title', () => {
